@@ -8,10 +8,23 @@ import { resolvers } from './resolvers';
 const typeDefs = `
 
 type Query {
-    foo: String!
+  classes: [Class]!
 }
 
+enum Semester {
+  FALL
+  SPRING
+  BOTH
+}
+
+type Class {
+    name: String!
+    credits: Float!
+    semester: Semester!
+}
 `;
+
+
 
 const schema = makeExecutableSchema({ typeDefs, resolvers });
 export { schema };

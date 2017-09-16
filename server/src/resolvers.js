@@ -1,10 +1,25 @@
 
 const foo = 'Foo';
 
+
 export const resolvers = {
     Query: {
-        foo: () => {
-            return foo;
-        },
+        classes() {
+          return classes;
+        }
+    },
+
+    Class: {
+        name(cls) {
+            return name;
+        }
+
+        credits() {
+            return credits;
+        }
+
+        semester() {
+            return semester;
+        }
     },
 };
