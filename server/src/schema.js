@@ -7,21 +7,43 @@ import { resolvers } from './resolvers';
 
 const typeDefs = `
 
-type Query {
-  classes: [Class]!
-}
-
 enum Semester {
-  FALL
-  SPRING
-  BOTH
+    FALL
+    SPRING
+    BOTH
+}
+  
+enum CreditKind {
+    QUANTITATIVE
+    NATURAL_SCIENCE
+    ENGINEERING
+    HUMANITIES
+    SOCIAL_SCIENCE
+    RESEARCH
+    LAB
+    WRITING_INTENSIVE
 }
 
 type Class {
-    name: String!
-    credits: Float!
-    semester: Semester!
+    name: String
+    id: String
+    credits: Float
+    semester: Semester
+    upperLevel: Boolean
+    creditKinds: [CreditKind]
 }
+
+type Query {
+    classes(
+        name: String,
+        id: String,
+        credits: Float,
+        semester: Semester,
+        upperLevel: Boolean,
+        creditKinds: [CreditKind]
+    ): [Class]
+}
+
 `;
 
 
