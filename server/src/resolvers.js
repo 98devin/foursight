@@ -77,6 +77,6 @@ const filterWithArgs = (arr, args) => arr.filter(a => {
 
 export const resolvers = {
     Query: {
-        classes: (_, args) => filterWithArgs(classes, args), 
+        classes: (_, args) => filterWithArgs(classes, args)
     },
 };
