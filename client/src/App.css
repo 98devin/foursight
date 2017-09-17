@@ -18,9 +18,9 @@
   font-size: large;
 }
 
-.RightSidebar {
-  font-size: large;
-  color : blue;
+
+.Sidebar {
+  height: 1000px;
 }
 
 @keyframes App-logo-spin {
