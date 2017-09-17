@@ -3,7 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import gql from 'graphql-tag';
 import { List } from 'semantic-ui-react';
-import RightSidebar from './components/sidebar/RightSidebar';
+import DoubleBar from './components/sidebar/DoubleBar';
 import MainHeader from './components/MainHeader.js';
 
 
@@ -125,20 +125,21 @@ class App extends React.Component {
       <ApolloProvider client={client}>
         <div className="App">
           <MainHeader/>
-          <LeftSidebar
+          <DoubleBar
             priors={priors}
             semesters={semesters}
-          />
-          <RightSidebar
             callbacks={{
               creditOverloadHandler: this.handleCheckboxChange('creditOverload'),
-              exceedGradHandler: this.handleCheckboxChange('exceedGradDate'),
-              gradMonthHandler: this.handleTextField('gradMonth'),
-              gradYearHandler: this.handleTextField('gradYear'),
-              minCreditsHandler: this.handleTextField('minCredits'),
-              maxCreditsHandler: this.handleTextField('maxCredits')
+              exceedGradHandler:     this.handleCheckboxChange('exceedGradDate'),
+              gradMonthHandler:      this.handleTextField('gradMonth'),
+              gradYearHandler:       this.handleTextField('gradYear'),
+              minCreditsHandler:     this.handleTextField('minCredits'),
+              maxCreditsHandler:     this.handleTextField('maxCredits')
             }} addMajor={{addMajor: this.addMajor}}
-          />
+          
+          >
+            <ScheduleView semesters={semesters} />
+          </DoubleBar>
         </div>
       </ApolloProvider>
     );
