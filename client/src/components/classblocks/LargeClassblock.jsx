@@ -20,7 +20,7 @@ const LargeClassblock = ({ class: { creditKinds, credits, name, id }, onClick })
     <div>
         <Button color={computeColor(creditKinds[0])}
                 size='huge' animated='vertical'
-                style={{width:'90%'}} active={false} onClick={onClick}>
+                style={{width:'90%', marginLeft: '7%'}} active={false} onClick={onClick}>
             <Button.Content visible>{`${name} (${credits})`}</Button.Content>
             <Button.Content hidden>{id}</Button.Content>
         </Button>
