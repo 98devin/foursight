@@ -169,7 +169,7 @@ const classes = [
             "QUANTITATIVE"
         ],
         required: [
-          "EN.600.226",
+          "EN.601.226",
           "EN.553.171"
         ],
     },
@@ -350,7 +350,7 @@ const classes = [
             "HUMANITIES"
         ],
         required: [
-          "AS>061.140"
+          "AS.061.140"
         ],
     },
     {
