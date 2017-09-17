@@ -193,7 +193,7 @@ const classes = [
         upperLevel: false,
         creditKinds: [
             "NATURAL_SCIENCE",
-            "SOCIAL_SCIENCE"
+            "HUMANITIES"
         ],
         required: [
         ],
@@ -448,7 +448,16 @@ const calculateDepartment = (id) => {
 
     let deptNo = id.split('.')[1];
     switch (deptNo) {
-    case '601': return 'Computer Science';
+    case '601': return 'COMPUTER_SCIENCE';
+    case '520': return 'ELECTRICAL_ENGINEERING';
+    case '050': return 'COGNITIVE_SCIENCE';
+    case '378': return 'LANGUAGE';
+    case '553': return 'APPLIED_MATH';
+    case '110': return 'MATH';
+    case '171': return 'PHYSICS';
+    case '030': return 'CHEMISTRY';
+    case '060': return 'ENGLISH';
+    case '061': return 'FILM';
     // etc.
     }
 

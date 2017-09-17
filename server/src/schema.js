@@ -24,6 +24,19 @@ enum CreditKind {
     WRITING_INTENSIVE
 }
 
+enum Department {
+  ELECTRICAL_ENGINEERING
+  COMPUTER_SCIENCE
+  COGNITIVE_SCIENCE
+  LANGUAGE
+  MATH
+  APPLIED_MATH
+  FILM
+  ENGLISH
+  CHEMISTRY
+  PHYSICS
+}
+
 type Class {
     name: String
     id: String
@@ -39,6 +52,7 @@ type Query {
     classes(
         name: String,
         id: String,
+        department: String,
         credits: Float,
         semester: Semester,
         upperLevel: Boolean,
