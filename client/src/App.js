@@ -2,6 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import gql from 'graphql-tag';
+import MainHeader from './components/MainHeader.js';
 
 import {
   ApolloClient,
@@ -47,7 +48,9 @@ class App extends React.Component {
 
     return (
       <ApolloProvider client={client}>
+
         <div className="App">
+          <MainHeader/>
           <LeftSidebar
             priors={priors}
           />
