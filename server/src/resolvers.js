@@ -1,6 +1,7 @@
 
 const foo = 'Foo';
 
+
 const classes = [
     {
         name: "Linear Algebra",
@@ -280,7 +281,7 @@ const classes = [
             "NATURAL_SCIENCE"
         ],
         required: [
-        "AS.171.101"
+            "AS.171.101"
         ],
     },
     {
@@ -332,9 +333,15 @@ const classes = [
         required: [
           "AS.030.101"
         ],
-    },
-    
+    },    
 ];
+
+
+const classesByID = {};
+classes.forEach(cls => {
+    classesByID[cls.id] = cls;
+    cls.required = cls.required.map(req => classesByID[req]);
+});
 
 
 const filterWithArgs = (arr, args) => arr.filter(a => {
