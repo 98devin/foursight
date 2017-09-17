@@ -85,6 +85,7 @@ export default class LeftSidebar extends React.Component {
             height: '50px',
             padding: '16px',
             fontSize: 20,
+            textAlign: 'left',
         };
         
         const menuLabelStyle = {

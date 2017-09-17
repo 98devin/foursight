@@ -27,6 +27,7 @@ enum CreditKind {
 type Class {
     name: String
     id: String
+    department: String
     credits: Float
     semester: Semester
     upperLevel: Boolean
