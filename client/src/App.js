@@ -5,7 +5,7 @@ import gql from 'graphql-tag';
 import { List } from 'semantic-ui-react';
 import DoubleBar from './components/sidebar/DoubleBar';
 import MainHeader from './components/MainHeader.js';
-
+import Questionnaire from './components/Questionnaire.jsx';
 
 import {
   ApolloClient,
@@ -140,6 +140,7 @@ class App extends React.Component {
           >
             <ScheduleView semesters={semesters} />
           </DoubleBar>
+          <Questionnaire/>
         </div>
       </ApolloProvider>
     );
