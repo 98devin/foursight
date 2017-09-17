@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import gql from 'graphql-tag';
 import { List } from 'semantic-ui-react';
+import RightSidebar from './RightSidebar';
 
 import {
   ApolloClient,
@@ -35,7 +36,7 @@ const ClassList = ({ data: { loading, classes, error }}) => (
     <List>
     { loading ?
         <p>Loading... </p>
-        : classes.map(cls => 
+        : classes.map(cls =>
           <List.Item>{cls.name} ({cls.id})</List.Item>
         )
     }
@@ -47,15 +48,53 @@ const ClassListWithData = graphql(classesQuery)(ClassList);
 
 
 class App extends React.Component {
+
+  state = {
+    majors : [],
+    maxCredits : 18,
+    minCredits : 12,
+    creditOverload : false,
+    exceedGradDate : false,
+    gradMonth : '',
+    gradYear : 0
+  }
+
+  handleCheckboxChange = (preferenceName) => (e, data) => {
+    this.setState(s =>
+      s[preferenceName] = data.checked
+    );
+  }
+
+  handleTextField = (preferenceName) => (e, data) => {
+    this.setState(s =>
+      s[preferenceName] = data.value
+    );
+  }
+
+  addMajor = (str) => (e, data) =>{
+    console.log(str);
+    this.setState(s =>
+      this.state.majors.push(data.value)
+    );
+  }
+
+
   render() {
+    console.log(this.state.maxCredits)
     return (
       <ApolloProvider client={client}>
-        <div className="App">
-          <div className="App-header">
-            <img src={logo} className="App-logo" alt="logo" />
-            <h2>Welcome to React</h2>
-          </div>
-          <ClassListWithData />
+        <div>
+          <RightSidebar
+            callbacks={{
+              creditOverloadHandler: this.handleCheckboxChange('creditOverload'),
+              exceedGradHandler: this.handleCheckboxChange('exceedGradDate'),
+              gradMonthHandler: this.handleTextField('gradMonth'),
+              gradYearHandler: this.handleTextField('gradYear'),
+              minCreditsHandler: this.handleTextField('minCredits'),
+              maxCreditsHandler: this.handleTextField('maxCredits')
+            }} addMajor={{addMajor: this.addMajor}}
+          />
+          RightSidebar.style.fontStyle='italic'
         </div>
       </ApolloProvider>
     );
