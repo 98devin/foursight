@@ -70,6 +70,10 @@ type Query {
         upperLevel: Boolean,
         creditKinds: [CreditKind]
     ): [Class]
+
+    majors(
+      name: String
+    ): [Major]
 }
 
 `;

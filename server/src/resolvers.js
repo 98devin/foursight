@@ -91,7 +91,7 @@ const classes = [
         id: "EN.601.220",
         credits: 4.0,
         semester: "BOTH",
-          
+
         creditKinds: [
             "ENGINEERING"
         ],
@@ -234,7 +234,7 @@ const classes = [
         ],
     },
     {
-        name: "General Physics: Physical Science Majors II",
+        name: "General Physics: Physical Science Majors I",
         id: "AS.171.101",
         credits: 4.0,
         semester: "BOTH",
@@ -446,7 +446,31 @@ const majors = [
     {
         name: "Computer Science (BS)",
         department: "COMPUTER_SCIENCE",
-        
+        required: [
+          "EN.601.104", //Computer Ethics
+          "EN.601.107", //Intro Java
+          "EN.601.220", //Intermediate
+          "EN.601.226", //Data Structures
+          "EN.601.231", //Automata
+          "EN.601.229", //CSF
+          "EN.601.443", //Algorithms
+          "EN.601.255", //VGD
+          "EN.553.171", //Discrete
+          "AS.110.108", //Calc I
+          "AS.110.109", //Calc II
+          "AS.171.101", //Physics I
+          "AS.171.102", //Physics II
+        ],
+        distributionRequirements: [
+          {
+            contributingKinds: ["HUMANITIES"],
+            expectedCreditTotal: 18
+          },
+          {
+            contributingKinds: ["WRITING_INTENSIVE"],
+            expectedCreditTotal: 6
+          },
+        ],
     },
     {
         name: "Computer Engineering",
@@ -470,6 +494,7 @@ const filterWithArgs = (arr, args) => arr.filter(a => {
 
 export const resolvers = {
     Query: {
-        classes: (_, args) => filterWithArgs(classes, args)
+        classes: (_, args) => filterWithArgs(classes, args),
+        majors: (_, args) => filterWithArgs(majors, args)
     },
 };
