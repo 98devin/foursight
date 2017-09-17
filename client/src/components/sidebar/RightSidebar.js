@@ -29,7 +29,7 @@ class RightSidebar extends Component {
     return (
       <div>
         <Button onClick={this.toggleVisibility}>Toggle Visibility</Button>
-        <Sidebar.Pushable as={Segment} style={{height:"100vh"}}>}*
+        <Sidebar.Pushable as={Segment} style={{height:"100vh"}}>
 
           <Sidebar
             as={Menu}

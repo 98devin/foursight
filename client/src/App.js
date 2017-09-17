@@ -3,7 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import gql from 'graphql-tag';
 import { List } from 'semantic-ui-react';
-import RightSidebar from './RightSidebar';
+import RightSidebar from './components/sidebar/RightSidebar';
 import MainHeader from './components/MainHeader.js';
 
 
