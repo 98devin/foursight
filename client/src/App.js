@@ -80,9 +80,9 @@ class App extends React.Component {
 
         <div className="App">
           <MainHeader/>
-          <ScheduleView semesters={semesters}/>
           <LeftSidebar
             priors={priors}
+            semesters={semesters}
           />
         </div>
       </ApolloProvider>

@@ -468,7 +468,7 @@ const classesByID = {};
 classes.forEach(cls => {
     classesByID[cls.id] = cls;
     cls.required = cls.required.map(req => classesByID[req]);
-    cls.department = calculatedepartment(cls.id);
+    cls.department = calculateDepartment(cls.id);
 });
 
 

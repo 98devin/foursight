@@ -13,7 +13,7 @@ import {
 } from 'semantic-ui-react';
 
 import SmallClassblock from '../classblocks/SmallClassblock';
-
+import ScheduleView from '../scheduleview/ScheduleView';
 
 export default class LeftSidebar extends React.Component {
 
@@ -94,7 +94,7 @@ export default class LeftSidebar extends React.Component {
 
         return (
             <div>
-                <Sidebar.Pushable as={Segment} style={{ height: '100vh' }}>
+                <Sidebar.Pushable as={Segment} style={{ height: '90vh' }}>
                     <Sidebar as={Menu} animation='uncover' width='wide' visible={visible} vertical>
                         
                         <Header as='h2' style={{paddingTop: '20px'}}> Completed Classes </Header>
@@ -152,7 +152,9 @@ export default class LeftSidebar extends React.Component {
                                 : null
                         }
                     </Sidebar>
-                    <Sidebar.Pusher style={{width: 0}} />
+                    <Sidebar.Pusher>
+                        <ScheduleView semesters={this.props.semesters} />
+                    </Sidebar.Pusher>
                 </Sidebar.Pushable>
             </div>
         )

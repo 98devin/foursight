@@ -28,7 +28,7 @@ export default class ScheduleView extends React.Component {
                     <Table.Row>
                     {
                         semesters.map(semester =>    
-                            <Table.Cell>
+                            <Table.Cell textAlign='center'>
                                 <List>
                                     {semester.classes.map(cls =>
                                         <List.Item>
