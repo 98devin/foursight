@@ -4,6 +4,43 @@ const foo = 'Foo';
 
 const classes = [
     {
+        name: "Discrete Mathematics",
+        id: "EN.553.171",
+        credits: 4.0,
+        semester: "BOTH",
+        upperLevel: false,
+        creditKinds: [
+            "QUANTITATIVE"
+        ],
+        required: [
+        ],
+    },
+    {
+        name: "Calculus I",
+        id: "AS.110.108",
+        credits: 4.0,
+        semester: "BOTH",
+        upperLevel: false,
+        creditKinds: [
+            "QUANTITATIVE"
+        ],
+        required: [
+        ],
+    },
+    {
+        name: "Calculus II",
+        id: "AS.110.109",
+        credits: 4.0,
+        semester: "BOTH",
+        upperLevel: false,
+        creditKinds: [
+            "QUANTITATIVE"
+        ],
+        required: [
+          "AS.110.108"
+        ],
+    },
+    {
         name: "Linear Algebra",
         id: "AS.110.201",
         credits: 4.0,
@@ -44,29 +81,15 @@ const classes = [
         ],
     },
     {
-        name: "Calculus II",
-        id: "AS.110.109",
-        credits: 4.0,
+        name: "Introductory Programming in Java",
+        id: "EN.601.107",
+        credits: 3.0,
         semester: "BOTH",
         upperLevel: false,
         creditKinds: [
-            "QUANTITATIVE"
+            "ENGINEERING"
         ],
         required: [
-          "AS.110.108"
-        ],
-    },
-    {
-        name: "Calculus I",
-        id: "AS.110.108",
-        credits: 4.0,
-        semester: "BOTH",
-        upperLevel: false,
-        creditKinds: [
-            "QUANTITATIVE"
-        ],
-        required: [
-
         ],
     },
     {
@@ -83,6 +106,20 @@ const classes = [
         ],
     },
     {
+        name: "Data Structures",
+        id: "EN.601.226",
+        credits: 4.0,
+        semester: "BOTH",
+        upperLevel: false,
+        creditKinds: [
+            "ENGINEERING",
+            "QUANTITATIVE"
+        ],
+        required: [
+          "EN.601.107"
+        ],
+    },
+    {
         name: "Computer Ethics",
         id: "EN.601.104",
         credits: 1.0,
@@ -92,7 +129,6 @@ const classes = [
             "HUMANITIES"
         ],
         required: [
-
         ],
     },
     {
@@ -107,98 +143,6 @@ const classes = [
         ],
         required: [
           "EN.553.171"
-        ],
-    },
-    {
-        name: "Cognition",
-        id: "AS.050.101",
-        credits: 3.0,
-        semester: "BOTH",
-        upperLevel: false,
-        creditKinds: [
-            "NATURAL_SCIENCE",
-            "SOCIAL_SCIENCE"
-        ],
-        required: [
-        ],
-    },
-    {
-        name: "Second Year Japanese I",
-        id: "AS.378.215",
-        credits: 4.5,
-        semester: "FALL",
-        upperLevel: false,
-        creditKinds: [
-            "HUMANITIES"
-        ],
-        required: [
-          "AS.378.116"
-        ],
-    },
-    {
-        name: "First Year Japanese I",
-        id: "AS.378.115",
-        credits: 4.5,
-        semester: "FALL",
-        upperLevel: false,
-        creditKinds: [
-            "HUMANITIES"
-        ],
-        required: [
-
-        ],
-    },
-    {
-        name: "First Year Japanese II",
-        id: "AS.378.116",
-        credits: 4.5,
-        semester: "SPRING",
-        upperLevel: false,
-        creditKinds: [
-            "HUMANITIES"
-        ],
-        required: [
-          "AS.378.115"
-        ],
-    },
-    {
-        name: "Second Year Japanese II",
-        id: "AS.378.216",
-        credits: 4.5,
-        semester: "SPRING",
-        upperLevel: false,
-        creditKinds: [
-            "HUMANITIES"
-        ],
-        required: [
-          "AS.378.215"
-        ],
-    },
-    {
-        name: "Introductory Programming in Java",
-        id: "EN.601.107",
-        credits: 3.0,
-        semester: "BOTH",
-        upperLevel: false,
-        creditKinds: [
-            "ENGINEERING"
-        ],
-        required: [
-
-        ],
-    },
-    {
-        name: "Data Structures",
-        id: "EN.601.226",
-        credits: 4.0,
-        semester: "BOTH",
-        upperLevel: false,
-        creditKinds: [
-            "ENGINEERING",
-            "QUANTITATIVE"
-        ],
-        required: [
-          "EN.601.107"
         ],
     },
     {
@@ -239,35 +183,83 @@ const classes = [
             "ENGINEERING"
         ],
         required: [
-
         ],
     },
     {
-        name: "Digital System Fundamentals",
-        id: "EN.520.142",
+        name: "Cognition",
+        id: "AS.050.101",
         credits: 3.0,
+        semester: "BOTH",
+        upperLevel: false,
+        creditKinds: [
+            "NATURAL_SCIENCE",
+            "SOCIAL_SCIENCE"
+        ],
+        required: [
+        ],
+    },
+    {
+        name: "First Year Japanese I",
+        id: "AS.378.115",
+        credits: 4.5,
+        semester: "FALL",
+        upperLevel: false,
+        creditKinds: [
+            "HUMANITIES"
+        ],
+        required: [
+        ],
+    },
+    {
+        name: "First Year Japanese II",
+        id: "AS.378.116",
+        credits: 4.5,
         semester: "SPRING",
         upperLevel: false,
         creditKinds: [
-            "ENGINEERING",
-            "QUANTITATIVE"
+            "HUMANITIES"
         ],
         required: [
-
+          "AS.378.115"
         ],
     },
     {
-        name: "Mastering Electronics",
-        id: "EN.520.230",
+        name: "Second Year Japanese I",
+        id: "AS.378.215",
+        credits: 4.5,
+        semester: "FALL",
+        upperLevel: false,
+        creditKinds: [
+            "HUMANITIES"
+        ],
+        required: [
+          "AS.378.116"
+        ],
+    },
+    {
+        name: "Second Year Japanese II",
+        id: "AS.378.216",
+        credits: 4.5,
+        semester: "SPRING",
+        upperLevel: false,
+        creditKinds: [
+            "HUMANITIES"
+        ],
+        required: [
+          "AS.378.215"
+        ],
+    },
+    {
+        name: "General Physics: Physical Science Majors II",
+        id: "AS.171.101",
         credits: 4.0,
         semester: "BOTH",
         upperLevel: false,
         creditKinds: [
             "ENGINEERING",
+            "NATURAL_SCIENCE"
         ],
         required: [
-          "AS.110.109",
-          "AS.171.102"
         ],
     },
     {
@@ -285,28 +277,30 @@ const classes = [
         ],
     },
     {
-        name: "General Physics: Physical Science Majors II",
-        id: "AS.171.101",
-        credits: 4.0,
-        semester: "BOTH",
+        name: "Digital System Fundamentals",
+        id: "EN.520.142",
+        credits: 3.0,
+        semester: "SPRING",
         upperLevel: false,
         creditKinds: [
             "ENGINEERING",
-            "NATURAL_SCIENCE"
+            "QUANTITATIVE"
         ],
         required: [
         ],
     },
     {
-        name: "Discrete Mathematics",
-        id: "EN.553.171",
+        name: "Mastering Electronics",
+        id: "EN.520.230",
         credits: 4.0,
         semester: "BOTH",
         upperLevel: false,
         creditKinds: [
-            "QUANTITATIVE"
+            "ENGINEERING",
         ],
         required: [
+          "AS.110.109",
+          "AS.171.102"
         ],
     },
     {
