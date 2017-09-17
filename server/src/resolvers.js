@@ -486,11 +486,82 @@ const majors = [
     },
     {
         name: "Computer Engineering",
-        required: [],
+        required: [
+          "EN.520.142", //DSF
+          "EN.520.230", //ME
+          "EN.601.220", //Intermediate
+          "EN.601.226", //Data Structures
+          "EN.601.229", //CSF
+          "EN.553.171", //Discrete
+          "AS.110.109", //Calc II
+          "AS.110.202", //Calc III
+          "AS.110.201", //Lin Alg
+          "EN.553.310", //Prob/Stat
+          "AS.171.101", //Physics I
+          "AS.171.102", //Physics II
+          "AS.030.101", //Chem I
+        ],
+        distributionRequirements: [
+          {
+            tags:["COMPUTER_SCIENCE"],
+            expectedCreditTotal: 15
+          },
+          {
+            tags:["ELECTRICAL_ENGINEERING"],
+            expectedCreditTotal: 15
+          },
+          {
+            tags:["COMPUTER_SCIENCE", "ELECTRICAL_ENGINEERING"],
+            expectedCreditTotal: 42
+          },
+          {
+            tags:["MATH", "APPLIED_MATH"],
+            expectedCreditTotal: 24
+          },
+          {
+            tags:["NATURAL_SCIENCE"],
+            expectedCreditTotal: 16
+          },
+          {
+            tags: ["HUMANITIES", "SOCIAL_SCIENCE"],
+            expectedCreditTotal: 18,
+            expectedClassTotal: 6
+          },
+          {
+            tags: ["WRITING_INTENSIVE"],
+            expectedCreditTotal: 6,
+            expectedClassTotal: 2
+          },
+        ],
     },
     {
         name: "Film and Media Studies",
-        required: [],
+        required: [
+          "AS.061.140", //intro Cin I
+          "AS.061.141", //Intro Cin II
+          "AS.060.100", //Intro to Expository
+          "AS.061.145", //Intro to Visual Language
+          "AS.061.150", //intro to Film Production
+          "AS.061.270", //Writing for the Screen
+          "AS.061.211", // Intermediate Film
+          "AS.061.301", //Advanced Film
+          "AS.061.440", //Senior Capstone Production
+        ],
+        distributionRequirements: [
+          {
+            tags:["LANGUAGE"],
+            expectedClassTotal: 2
+          },
+          {
+            tags:["FILM"],
+            expectedClassTotal: 13
+          },
+          {
+            tags:["WRITING_INTENSIVE"],
+            expectedCreditTotal: 12,
+            expectedClassTotal: 4
+          },
+        ],
     },
 ];
 
