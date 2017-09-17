@@ -29,8 +29,6 @@ class RightSidebar extends Component {
     return (
       <div>
         <Button onClick={this.toggleVisibility}>Toggle Visibility</Button>
-        <Sidebar.Pushable as={Segment} style={{height:"100vh"}}>
-
           <Sidebar
             as={Menu}
             animation='push'
@@ -45,13 +43,6 @@ class RightSidebar extends Component {
             <br/>
             <Search onResultSelect={addMajor} />
             <br/>
-
-
-
-
-
-
-
             <br/>Expected Graduation Date<br/>
             <Input placeholder='Month' onChange={gradMonthHandler} type='month'/>
             <br/><br/>Max Credit Count<br/>
@@ -79,7 +70,6 @@ class RightSidebar extends Component {
               <Image src='/assets/images/wireframe/paragraph.png' />
             </Segment>
           </Sidebar.Pusher>
-        </Sidebar.Pushable>
       </div>
     )
   }
