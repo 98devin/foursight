@@ -180,7 +180,7 @@ const classes = [
         semester: "BOTH",
         tags: [
             "NATURAL_SCIENCE",
-            "HUMANITIES"
+            "SOCIAL_SCIENCE"
         ],
         required: [
         ],
@@ -461,12 +461,26 @@ const majors = [
         ],
         distributionRequirements: [
           {
-            tags: ["HUMANITIES"],
-            expectedCreditTotal: 18
+            tags:["COMPUTER_SCIENCE"],
+            expectedCreditTotal: 42
+          },
+          {
+            tags:["MATH", "APPLIED_MATH"],
+            expectedCreditTotal: 24
+          },
+          {
+            tags:["NATURAL_SCIENCE"],
+            expectedCreditTotal: 16
+          },
+          {
+            tags: ["HUMANITIES", "SOCIAL_SCIENCE"],
+            expectedCreditTotal: 18,
+            expectedClassTotal: 6
           },
           {
             tags: ["WRITING_INTENSIVE"],
-            expectedCreditTotal: 6
+            expectedCreditTotal: 6,
+            expectedClassTotal: 2
           },
         ],
     },
