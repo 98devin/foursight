@@ -13,7 +13,7 @@ enum Semester {
     BOTH
 }
 
-enum CreditKind {
+enum ClassTag {
     QUANTITATIVE
     NATURAL_SCIENCE
     ENGINEERING
@@ -23,39 +23,35 @@ enum CreditKind {
     LAB
     WRITING_INTENSIVE
     UPPER_LEVEL
-}
-
-enum Department {
-  ELECTRICAL_ENGINEERING
-  COMPUTER_SCIENCE
-  COGNITIVE_SCIENCE
-  LANGUAGE
-  MATH
-  APPLIED_MATH
-  FILM
-  ENGLISH
-  CHEMISTRY
-  PHYSICS
+    ELECTRICAL_ENGINEERING
+    COMPUTER_SCIENCE
+    COGNITIVE_SCIENCE
+    LANGUAGE
+    MATH
+    APPLIED_MATH
+    FILM
+    ENGLISH
+    CHEMISTRY
+    PHYSICS
 }
 
 type Class {
     name: String
     id: String
-    department: Department
     credits: Float
     semester: Semester
-    creditKinds: [CreditKind]
+    tags: [ClassTag]
     required: [Class]
 }
 
 type DistReq {
-    contributingKinds: [CreditKind]
+    tags: [ClassTag]
     expectedCreditTotal: Float
+    expectedClassTotal: Int
 }
 
 type Major {
     name: String
-    department: Department
     required: [Class]
     distributionRequirements: [DistReq]
 }
@@ -64,15 +60,12 @@ type Query {
     classes(
         name: String,
         id: String,
-        department: String,
         credits: Float,
         semester: Semester,
-        upperLevel: Boolean,
-        creditKinds: [CreditKind]
     ): [Class]
 
     majors(
-      name: String
+        name: String
     ): [Major]
 }
 

@@ -8,7 +8,7 @@ const classes = [
         id: "EN.553.171",
         credits: 4.0,
         semester: "BOTH",
-        creditKinds: [
+        tags: [
             "QUANTITATIVE"
         ],
         required: [
@@ -19,7 +19,7 @@ const classes = [
         id: "AS.110.108",
         credits: 4.0,
         semester: "BOTH",
-        creditKinds: [
+        tags: [
             "QUANTITATIVE"
         ],
         required: [
@@ -30,7 +30,7 @@ const classes = [
         id: "AS.110.109",
         credits: 4.0,
         semester: "BOTH",
-        creditKinds: [
+        tags: [
             "QUANTITATIVE"
         ],
         required: [
@@ -42,7 +42,7 @@ const classes = [
         id: "AS.110.201",
         credits: 4.0,
         semester: "BOTH",
-        creditKinds: [
+        tags: [
             "QUANTITATIVE"
         ],
         required: [
@@ -54,7 +54,7 @@ const classes = [
         id: "EN.553.310",
         credits: 4.0,
         semester: "BOTH",
-        creditKinds: [
+        tags: [
             "QUANTITATIVE",
             "ENGINEERING",
             "UPPER_LEVEL"
@@ -68,7 +68,7 @@ const classes = [
         id: "AS.110.202",
         credits: 4.0,
         semester: "BOTH",
-        creditKinds: [
+        tags: [
             "QUANTITATIVE"
         ],
         required: [
@@ -80,7 +80,7 @@ const classes = [
         id: "EN.601.107",
         credits: 3.0,
         semester: "BOTH",
-        creditKinds: [
+        tags: [
             "ENGINEERING"
         ],
         required: [
@@ -91,8 +91,7 @@ const classes = [
         id: "EN.601.220",
         credits: 4.0,
         semester: "BOTH",
-
-        creditKinds: [
+        tags: [
             "ENGINEERING"
         ],
         required: [
@@ -104,7 +103,7 @@ const classes = [
         id: "EN.601.226",
         credits: 4.0,
         semester: "BOTH",
-        creditKinds: [
+        tags: [
             "ENGINEERING",
             "QUANTITATIVE"
         ],
@@ -117,7 +116,7 @@ const classes = [
         id: "EN.601.104",
         credits: 1.0,
         semester: "BOTH",
-        creditKinds: [
+        tags: [
             "HUMANITIES"
         ],
         required: [
@@ -128,7 +127,7 @@ const classes = [
         id: "EN.601.231",
         credits: 3.0,
         semester: "BOTH",
-        creditKinds: [
+        tags: [
             "ENGINEERING",
             "QUANTITATIVE"
         ],
@@ -141,7 +140,7 @@ const classes = [
         id: "EN.601.229",
         credits: 3.0,
         semester: "BOTH",
-        creditKinds: [
+        tags: [
             "ENGINEERING"
         ],
         required: [
@@ -153,7 +152,7 @@ const classes = [
         id: "EN.601.433",
         credits: 3.0,
         semester: "BOTH",
-        creditKinds: [
+        tags: [
             "ENGINEERING",
             "QUANTITATIVE",
             "UPPER_LEVEL"
@@ -168,7 +167,7 @@ const classes = [
         id: "EN.601.255",
         credits: 3.0,
         semester: "FALL",
-        creditKinds: [
+        tags: [
             "ENGINEERING"
         ],
         required: [
@@ -179,7 +178,7 @@ const classes = [
         id: "AS.050.101",
         credits: 3.0,
         semester: "BOTH",
-        creditKinds: [
+        tags: [
             "NATURAL_SCIENCE",
             "HUMANITIES"
         ],
@@ -191,7 +190,7 @@ const classes = [
         id: "AS.378.115",
         credits: 4.5,
         semester: "FALL",
-        creditKinds: [
+        tags: [
             "HUMANITIES"
         ],
         required: [
@@ -202,7 +201,7 @@ const classes = [
         id: "AS.378.116",
         credits: 4.5,
         semester: "SPRING",
-        creditKinds: [
+        tags: [
             "HUMANITIES"
         ],
         required: [
@@ -214,7 +213,7 @@ const classes = [
         id: "AS.378.215",
         credits: 4.5,
         semester: "FALL",
-        creditKinds: [
+        tags: [
             "HUMANITIES"
         ],
         required: [
@@ -226,7 +225,7 @@ const classes = [
         id: "AS.378.216",
         credits: 4.5,
         semester: "SPRING",
-        creditKinds: [
+        tags: [
             "HUMANITIES"
         ],
         required: [
@@ -238,7 +237,7 @@ const classes = [
         id: "AS.171.101",
         credits: 4.0,
         semester: "BOTH",
-        creditKinds: [
+        tags: [
             "ENGINEERING",
             "NATURAL_SCIENCE"
         ],
@@ -250,7 +249,7 @@ const classes = [
         id: "AS.171.102",
         credits: 4.0,
         semester: "BOTH",
-        creditKinds: [
+        tags: [
             "ENGINEERING",
             "NATURAL_SCIENCE"
         ],
@@ -263,7 +262,7 @@ const classes = [
         id: "EN.520.142",
         credits: 3.0,
         semester: "SPRING",
-        creditKinds: [
+        tags: [
             "ENGINEERING",
             "QUANTITATIVE"
         ],
@@ -275,7 +274,7 @@ const classes = [
         id: "EN.520.230",
         credits: 4.0,
         semester: "BOTH",
-        creditKinds: [
+        tags: [
             "ENGINEERING",
         ],
         required: [
@@ -288,7 +287,7 @@ const classes = [
         id: "AS.030.101",
         credits: 3.0,
         semester: "FALL",
-        creditKinds: [
+        tags: [
             "NATURAL_SCIENCE"
         ],
         required: [
@@ -299,7 +298,7 @@ const classes = [
         id: "AS.030.102",
         credits: 3.0,
         semester: "SPRING",
-        creditKinds: [
+        tags: [
             "NATURAL_SCIENCE"
         ],
         required: [
@@ -311,7 +310,7 @@ const classes = [
         id: "AS.061.140",
         credits: 3.0,
         semester: "FALL",
-        creditKinds: [
+        tags: [
             "HUMANITIES"
         ],
         required: [
@@ -322,7 +321,7 @@ const classes = [
         id: "AS.061.141",
         credits: 3.0,
         semester: "SPRING",
-        creditKinds: [
+        tags: [
             "HUMANITIES"
         ],
         required: [
@@ -334,7 +333,7 @@ const classes = [
         id: "AS.060.100",
         credits: 3.0,
         semester: "BOTH",
-        creditKinds: [
+        tags: [
             "HUMANITIES",
             "WRITING_INTENSIVE"
         ],
@@ -346,7 +345,7 @@ const classes = [
         id: "AS.061.145",
         credits: 3.0,
         semester: "BOTH",
-        creditKinds: [
+        tags: [
             "HUMANITIES"
         ],
         required: [
@@ -357,7 +356,7 @@ const classes = [
         id: "AS.061.150",
         credits: 3.0,
         semester: "BOTH",
-        creditKinds: [
+        tags: [
             "HUMANITIES"
         ],
         required: [
@@ -368,7 +367,7 @@ const classes = [
         id: "AS.061.270",
         credits: 3.0,
         semester: "SPRING",
-        creditKinds: [
+        tags: [
             "HUMANITIES"
         ],
         required: [
@@ -379,7 +378,7 @@ const classes = [
         id: "AS.061.211",
         credits: 3.0,
         semester: "BOTH",
-        creditKinds: [
+        tags: [
             "HUMANITIES"
         ],
         required: [
@@ -391,7 +390,7 @@ const classes = [
         id: "AS.061.301",
         credits: 3.0,
         semester: "BOTH",
-        creditKinds: [
+        tags: [
             "HUMANITIES",
             "UPPER_LEVEL"
         ],
@@ -404,7 +403,7 @@ const classes = [
         id: "AS.061.440",
         credits: 3.0,
         semester: "BOTH",
-        creditKinds: [
+        tags: [
             "HUMANITIES",
             "UPPER_LEVEL"
         ],
@@ -438,14 +437,13 @@ const classesByID = {};
 classes.forEach(cls => {
     classesByID[cls.id] = cls;
     cls.required = cls.required.map(req => classesByID[req]);
-    cls.department = calculateDepartment(cls.id);
+    cls.tags.push(calculateDepartment(cls.id));
 });
 
 
 const majors = [
     {
         name: "Computer Science (BS)",
-        department: "COMPUTER_SCIENCE",
         required: [
           "EN.601.104", //Computer Ethics
           "EN.601.107", //Intro Java
@@ -453,7 +451,7 @@ const majors = [
           "EN.601.226", //Data Structures
           "EN.601.231", //Automata
           "EN.601.229", //CSF
-          "EN.601.443", //Algorithms
+          "EN.601.433", //Algorithms
           "EN.601.255", //VGD
           "EN.553.171", //Discrete
           "AS.110.108", //Calc I
@@ -463,25 +461,28 @@ const majors = [
         ],
         distributionRequirements: [
           {
-            contributingKinds: ["HUMANITIES"],
+            tags: ["HUMANITIES"],
             expectedCreditTotal: 18
           },
           {
-            contributingKinds: ["WRITING_INTENSIVE"],
+            tags: ["WRITING_INTENSIVE"],
             expectedCreditTotal: 6
           },
         ],
     },
     {
         name: "Computer Engineering",
-        department: "ELECTRICAL_ENGINEERING",
+        required: [],
     },
     {
         name: "Film and Media Studies",
-        department: "FILM",
+        required: [],
     },
 ];
 
+majors.forEach(major => {
+    major.required = major.required.map(id => classesByID[id]);
+});
 
 
 const filterWithArgs = (arr, args) => arr.filter(a => {
