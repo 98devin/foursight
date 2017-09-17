@@ -16,6 +16,32 @@ const classes = [
         ],
     },
     {
+        name: "Calculus II",
+        id: "AS.110.109",
+        credits: 4.0,
+        semester: "BOTH",
+        upperLevel: false,
+        creditKinds: [
+            "QUANTITATIVE"
+        ],
+        required: [
+          "AS.110.108"
+        ],
+    },
+    {
+        name: "Calculus I",
+        id: "AS.110.108",
+        credits: 4.0,
+        semester: "BOTH",
+        upperLevel: false,
+        creditKinds: [
+            "QUANTITATIVE"
+        ],
+        required: [
+          "None"
+        ],
+    },
+    {
         name: "Intermediate Programming",
         id: "EN.601.220",
         credits: 4.0,
@@ -23,6 +49,9 @@ const classes = [
         upperLevel: false,
         creditKinds: [
             "ENGINEERING"
+        ],
+        required: [
+          "EN.601.107"
         ],
     },
     {
@@ -33,6 +62,9 @@ const classes = [
         upperLevel: false,
         creditKinds: [
             "HUMANITIES"
+        ],
+        required: [
+          "None"
         ],
     },
     {
@@ -45,6 +77,9 @@ const classes = [
             "ENGINEERING",
             "QUANTITATIVE"
         ],
+        required: [
+          "EN.553.171"
+        ],
     },
     {
         name: "Cognition",
@@ -56,6 +91,9 @@ const classes = [
             "NATURAL_SCIENCE",
             "SOCIAL_SCIENCE"
         ],
+        required: [
+          "None"
+        ],
     },
     {
         name: "Second Year Japanese I",
@@ -66,6 +104,48 @@ const classes = [
         creditKinds: [
             "HUMANITIES"
         ],
+        required: [
+          "AS.378.116"
+        ],
+    },
+    {
+        name: "First Year Japanese I",
+        id: "AS.378.115",
+        credits: 4.5,
+        semester: "FALL",
+        upperLevel: false,
+        creditKinds: [
+            "HUMANITIES"
+        ],
+        required: [
+          "None"
+        ],
+    },
+    {
+        name: "First Year Japanese II",
+        id: "AS.378.116",
+        credits: 4.5,
+        semester: "SPRING",
+        upperLevel: false,
+        creditKinds: [
+            "HUMANITIES"
+        ],
+        required: [
+          "AS.378.115"
+        ],
+    },
+    {
+        name: "Second Year Japanese II",
+        id: "AS.378.216",
+        credits: 4.5,
+        semester: "SPRING",
+        upperLevel: false,
+        creditKinds: [
+            "HUMANITIES"
+        ],
+        required: [
+          "AS.378.215"
+        ],
     },
     {
         name: "Introductory Programming in Java",
@@ -75,6 +155,9 @@ const classes = [
         upperLevel: false,
         creditKinds: [
             "ENGINEERING"
+        ],
+        required: [
+          "None"
         ],
     },
     {
@@ -87,6 +170,9 @@ const classes = [
             "ENGINEERING",
             "QUANTITATIVE"
         ],
+        required: [
+          "EN.601.107"
+        ],
     },
     {
         name: "Computer System Fundamentals",
@@ -96,6 +182,9 @@ const classes = [
         upperLevel: false,
         creditKinds: [
             "ENGINEERING"
+        ],
+        required: [
+          "EN.601.220"
         ],
     },
     {
@@ -108,6 +197,10 @@ const classes = [
             "ENGINEERING",
             "QUANTITATIVE"
         ],
+        required: [
+          "EN.600.226",
+          "EN.550.171"
+        ],
     },
     {
         name: "Introduction to Video Game Design",
@@ -118,6 +211,9 @@ const classes = [
         creditKinds: [
             "ENGINEERING"
         ],
+        required: [
+          "None"
+        ],
     },
     {
         name: "Digital System Fundamentals",
@@ -126,7 +222,11 @@ const classes = [
         semester: "SPRING",
         upperLevel: false,
         creditKinds: [
-            "ENGINEERING"
+            "ENGINEERING",
+            "QUANTITATIVE"
+        ],
+        required: [
+          "None"
         ],
     },
 
