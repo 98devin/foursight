@@ -8,7 +8,6 @@ const classes = [
         id: "EN.553.171",
         credits: 4.0,
         semester: "BOTH",
-        upperLevel: false,
         creditKinds: [
             "QUANTITATIVE"
         ],
@@ -20,7 +19,6 @@ const classes = [
         id: "AS.110.108",
         credits: 4.0,
         semester: "BOTH",
-        upperLevel: false,
         creditKinds: [
             "QUANTITATIVE"
         ],
@@ -32,7 +30,6 @@ const classes = [
         id: "AS.110.109",
         credits: 4.0,
         semester: "BOTH",
-        upperLevel: false,
         creditKinds: [
             "QUANTITATIVE"
         ],
@@ -45,7 +42,6 @@ const classes = [
         id: "AS.110.201",
         credits: 4.0,
         semester: "BOTH",
-        upperLevel: false,
         creditKinds: [
             "QUANTITATIVE"
         ],
@@ -58,10 +54,10 @@ const classes = [
         id: "EN.553.310",
         credits: 4.0,
         semester: "BOTH",
-        upperLevel: true,
         creditKinds: [
             "QUANTITATIVE",
-            "ENGINEERING"
+            "ENGINEERING",
+            "UPPER_LEVEL"
         ],
         required: [
           "AS.110.109"
@@ -72,7 +68,6 @@ const classes = [
         id: "AS.110.202",
         credits: 4.0,
         semester: "BOTH",
-        upperLevel: false,
         creditKinds: [
             "QUANTITATIVE"
         ],
@@ -85,7 +80,6 @@ const classes = [
         id: "EN.601.107",
         credits: 3.0,
         semester: "BOTH",
-        upperLevel: false,
         creditKinds: [
             "ENGINEERING"
         ],
@@ -97,7 +91,7 @@ const classes = [
         id: "EN.601.220",
         credits: 4.0,
         semester: "BOTH",
-        upperLevel: false,
+          
         creditKinds: [
             "ENGINEERING"
         ],
@@ -110,7 +104,6 @@ const classes = [
         id: "EN.601.226",
         credits: 4.0,
         semester: "BOTH",
-        upperLevel: false,
         creditKinds: [
             "ENGINEERING",
             "QUANTITATIVE"
@@ -124,7 +117,6 @@ const classes = [
         id: "EN.601.104",
         credits: 1.0,
         semester: "BOTH",
-        upperLevel: false,
         creditKinds: [
             "HUMANITIES"
         ],
@@ -136,7 +128,6 @@ const classes = [
         id: "EN.601.231",
         credits: 3.0,
         semester: "BOTH",
-        upperLevel: false,
         creditKinds: [
             "ENGINEERING",
             "QUANTITATIVE"
@@ -150,7 +141,6 @@ const classes = [
         id: "EN.601.229",
         credits: 3.0,
         semester: "BOTH",
-        upperLevel: false,
         creditKinds: [
             "ENGINEERING"
         ],
@@ -163,10 +153,10 @@ const classes = [
         id: "EN.601.433",
         credits: 3.0,
         semester: "BOTH",
-        upperLevel: true,
         creditKinds: [
             "ENGINEERING",
-            "QUANTITATIVE"
+            "QUANTITATIVE",
+            "UPPER_LEVEL"
         ],
         required: [
           "EN.601.226",
@@ -178,7 +168,6 @@ const classes = [
         id: "EN.601.255",
         credits: 3.0,
         semester: "FALL",
-        upperLevel: false,
         creditKinds: [
             "ENGINEERING"
         ],
@@ -190,7 +179,6 @@ const classes = [
         id: "AS.050.101",
         credits: 3.0,
         semester: "BOTH",
-        upperLevel: false,
         creditKinds: [
             "NATURAL_SCIENCE",
             "HUMANITIES"
@@ -203,7 +191,6 @@ const classes = [
         id: "AS.378.115",
         credits: 4.5,
         semester: "FALL",
-        upperLevel: false,
         creditKinds: [
             "HUMANITIES"
         ],
@@ -215,7 +202,6 @@ const classes = [
         id: "AS.378.116",
         credits: 4.5,
         semester: "SPRING",
-        upperLevel: false,
         creditKinds: [
             "HUMANITIES"
         ],
@@ -228,7 +214,6 @@ const classes = [
         id: "AS.378.215",
         credits: 4.5,
         semester: "FALL",
-        upperLevel: false,
         creditKinds: [
             "HUMANITIES"
         ],
@@ -241,7 +226,6 @@ const classes = [
         id: "AS.378.216",
         credits: 4.5,
         semester: "SPRING",
-        upperLevel: false,
         creditKinds: [
             "HUMANITIES"
         ],
@@ -254,7 +238,6 @@ const classes = [
         id: "AS.171.101",
         credits: 4.0,
         semester: "BOTH",
-        upperLevel: false,
         creditKinds: [
             "ENGINEERING",
             "NATURAL_SCIENCE"
@@ -267,7 +250,6 @@ const classes = [
         id: "AS.171.102",
         credits: 4.0,
         semester: "BOTH",
-        upperLevel: false,
         creditKinds: [
             "ENGINEERING",
             "NATURAL_SCIENCE"
@@ -281,7 +263,6 @@ const classes = [
         id: "EN.520.142",
         credits: 3.0,
         semester: "SPRING",
-        upperLevel: false,
         creditKinds: [
             "ENGINEERING",
             "QUANTITATIVE"
@@ -294,7 +275,6 @@ const classes = [
         id: "EN.520.230",
         credits: 4.0,
         semester: "BOTH",
-        upperLevel: false,
         creditKinds: [
             "ENGINEERING",
         ],
@@ -308,7 +288,6 @@ const classes = [
         id: "AS.030.101",
         credits: 3.0,
         semester: "FALL",
-        upperLevel: false,
         creditKinds: [
             "NATURAL_SCIENCE"
         ],
@@ -320,7 +299,6 @@ const classes = [
         id: "AS.030.102",
         credits: 3.0,
         semester: "SPRING",
-        upperLevel: false,
         creditKinds: [
             "NATURAL_SCIENCE"
         ],
@@ -333,7 +311,6 @@ const classes = [
         id: "AS.061.140",
         credits: 3.0,
         semester: "FALL",
-        upperLevel: false,
         creditKinds: [
             "HUMANITIES"
         ],
@@ -345,7 +322,6 @@ const classes = [
         id: "AS.061.141",
         credits: 3.0,
         semester: "SPRING",
-        upperLevel: false,
         creditKinds: [
             "HUMANITIES"
         ],
@@ -358,7 +334,6 @@ const classes = [
         id: "AS.060.100",
         credits: 3.0,
         semester: "BOTH",
-        upperLevel: false,
         creditKinds: [
             "HUMANITIES",
             "WRITING_INTENSIVE"
@@ -371,7 +346,6 @@ const classes = [
         id: "AS.061.145",
         credits: 3.0,
         semester: "BOTH",
-        upperLevel: false,
         creditKinds: [
             "HUMANITIES"
         ],
@@ -383,7 +357,6 @@ const classes = [
         id: "AS.061.150",
         credits: 3.0,
         semester: "BOTH",
-        upperLevel: false,
         creditKinds: [
             "HUMANITIES"
         ],
@@ -395,7 +368,6 @@ const classes = [
         id: "AS.061.270",
         credits: 3.0,
         semester: "SPRING",
-        upperLevel: false,
         creditKinds: [
             "HUMANITIES"
         ],
@@ -407,7 +379,6 @@ const classes = [
         id: "AS.061.211",
         credits: 3.0,
         semester: "BOTH",
-        upperLevel: false,
         creditKinds: [
             "HUMANITIES"
         ],
@@ -420,9 +391,9 @@ const classes = [
         id: "AS.061.301",
         credits: 3.0,
         semester: "BOTH",
-        upperLevel: true,
         creditKinds: [
-            "HUMANITIES"
+            "HUMANITIES",
+            "UPPER_LEVEL"
         ],
         required: [
         "AS.061.211"
@@ -433,9 +404,9 @@ const classes = [
         id: "AS.061.440",
         credits: 3.0,
         semester: "BOTH",
-        upperLevel: true,
         creditKinds: [
-            "HUMANITIES"
+            "HUMANITIES",
+            "UPPER_LEVEL"
         ],
         required: [
         "AS.061.301"
@@ -463,13 +434,30 @@ const calculateDepartment = (id) => {
 
 }
 
-
 const classesByID = {};
 classes.forEach(cls => {
     classesByID[cls.id] = cls;
     cls.required = cls.required.map(req => classesByID[req]);
     cls.department = calculateDepartment(cls.id);
 });
+
+
+const majors = [
+    {
+        name: "Computer Science (BS)",
+        department: "COMPUTER_SCIENCE",
+        
+    },
+    {
+        name: "Computer Engineering",
+        department: "ELECTRICAL_ENGINEERING",
+    },
+    {
+        name: "Film and Media Studies",
+        department: "FILM",
+    },
+];
+
 
 
 const filterWithArgs = (arr, args) => arr.filter(a => {

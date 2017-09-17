@@ -22,6 +22,7 @@ enum CreditKind {
     RESEARCH
     LAB
     WRITING_INTENSIVE
+    UPPER_LEVEL
 }
 
 enum Department {
@@ -40,12 +41,23 @@ enum Department {
 type Class {
     name: String
     id: String
-    department: String
+    department: Department
     credits: Float
     semester: Semester
-    upperLevel: Boolean
     creditKinds: [CreditKind]
     required: [Class]
+}
+
+type DistReq {
+    contributingKinds: [CreditKind]
+    expectedCreditTotal: Float
+}
+
+type Major {
+    name: String
+    department: Department
+    required: [Class]
+    distributionRequirements: [DistReq]
 }
 
 type Query {
