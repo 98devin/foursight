@@ -333,7 +333,119 @@ const classes = [
           "AS.030.101"
         ],
     },
-    
+    {
+        name: "Introduction to Cinema I",
+        id: "AS.061.140",
+        credits: 3.0,
+        semester: "FALL",
+        upperLevel: false,
+        creditKinds: [
+            "HUMANITIES"
+        ],
+        required: [
+        ],
+    },
+    {
+        name: "Introduction to Cinema II",
+        id: "AS.061.141",
+        credits: 3.0,
+        semester: "SPRING",
+        upperLevel: false,
+        creditKinds: [
+            "HUMANITIES"
+        ],
+        required: [
+          "AS>061.140"
+        ],
+    },
+    {
+        name: "Introduction to Expository Writing",
+        id: "AS.060.100",
+        credits: 3.0,
+        semester: "BOTH",
+        upperLevel: false,
+        creditKinds: [
+            "HUMANITIES",
+            "WRITING_INTENSIVE"
+        ],
+        required: [
+        ],
+    },
+    {
+        name: "Introduction to Visual Language",
+        id: "AS.061.145",
+        credits: 3.0,
+        semester: "BOTH",
+        upperLevel: false,
+        creditKinds: [
+            "HUMANITIES"
+        ],
+        required: [
+        ],
+    },
+    {
+        name: "Introduction to Film Production",
+        id: "AS.061.150",
+        credits: 3.0,
+        semester: "BOTH",
+        upperLevel: false,
+        creditKinds: [
+            "HUMANITIES"
+        ],
+        required: [
+        ],
+    },
+    {
+        name: "Writing for the Screen",
+        id: "AS.061.270",
+        credits: 3.0,
+        semester: "SPRING",
+        upperLevel: false,
+        creditKinds: [
+            "HUMANITIES"
+        ],
+        required: [
+        ],
+    },
+      {
+          name: "Intermediate Film Production",
+          id: "AS.061.211",
+          credits: 3.0,
+          semester: "BOTH",
+          upperLevel: false,
+          creditKinds: [
+              "HUMANITIES"
+          ],
+          required: [
+            "AS.061.150"
+          ],
+      },
+      {
+          name: "Advanced Film Production",
+          id: "AS.061.301",
+          credits: 3.0,
+          semester: "BOTH",
+          upperLevel: true,
+          creditKinds: [
+              "HUMANITIES"
+          ],
+          required: [
+            "AS.061.211"
+          ],
+      },
+      {
+          name: "Senior Capstone Production",
+          id: "AS.061.440",
+          credits: 3.0,
+          semester: "BOTH",
+          upperLevel: true,
+          creditKinds: [
+              "HUMANITIES"
+          ],
+          required: [
+            "AS.061.301"
+          ],
+      },
 ];
 
 
