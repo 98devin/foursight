@@ -31,7 +31,7 @@ type Class {
     semester: Semester
     upperLevel: Boolean
     creditKinds: [CreditKind]
-    required: [String]
+    required: [Class]
 }
 
 type Query {

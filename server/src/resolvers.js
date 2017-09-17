@@ -1,6 +1,7 @@
 
 const foo = 'Foo';
 
+
 const classes = [
     {
         name: "Linear Algebra",
@@ -280,7 +281,7 @@ const classes = [
             "NATURAL_SCIENCE"
         ],
         required: [
-        "AS.171.101"
+            "AS.171.101"
         ],
     },
     {
@@ -407,46 +408,53 @@ const classes = [
         required: [
         ],
     },
-      {
-          name: "Intermediate Film Production",
-          id: "AS.061.211",
-          credits: 3.0,
-          semester: "BOTH",
-          upperLevel: false,
-          creditKinds: [
-              "HUMANITIES"
-          ],
-          required: [
-            "AS.061.150"
-          ],
-      },
-      {
-          name: "Advanced Film Production",
-          id: "AS.061.301",
-          credits: 3.0,
-          semester: "BOTH",
-          upperLevel: true,
-          creditKinds: [
-              "HUMANITIES"
-          ],
-          required: [
-            "AS.061.211"
-          ],
-      },
-      {
-          name: "Senior Capstone Production",
-          id: "AS.061.440",
-          credits: 3.0,
-          semester: "BOTH",
-          upperLevel: true,
-          creditKinds: [
-              "HUMANITIES"
-          ],
-          required: [
-            "AS.061.301"
-          ],
-      },
+    {
+        name: "Intermediate Film Production",
+        id: "AS.061.211",
+        credits: 3.0,
+        semester: "BOTH",
+        upperLevel: false,
+        creditKinds: [
+            "HUMANITIES"
+        ],
+        required: [
+        "AS.061.150"
+        ],
+    },
+    {
+        name: "Advanced Film Production",
+        id: "AS.061.301",
+        credits: 3.0,
+        semester: "BOTH",
+        upperLevel: true,
+        creditKinds: [
+            "HUMANITIES"
+        ],
+        required: [
+        "AS.061.211"
+        ],
+    },
+    {
+        name: "Senior Capstone Production",
+        id: "AS.061.440",
+        credits: 3.0,
+        semester: "BOTH",
+        upperLevel: true,
+        creditKinds: [
+            "HUMANITIES"
+        ],
+        required: [
+        "AS.061.301"
+        ],
+    },
 ];
+
+
+const classesByID = {};
+classes.forEach(cls => {
+    classesByID[cls.id] = cls;
+    cls.required = cls.required.map(req => classesByID[req]);
+});
 
 
 const filterWithArgs = (arr, args) => arr.filter(a => {

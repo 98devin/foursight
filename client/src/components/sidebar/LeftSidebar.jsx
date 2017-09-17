@@ -151,6 +151,7 @@ export default class LeftSidebar extends React.Component {
                                 : null
                         }
                     </Sidebar>
+                    <Sidebar.Pusher style={{width: 0}} />
                 </Sidebar.Pushable>
             </div>
         )
