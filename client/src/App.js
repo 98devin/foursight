@@ -2,7 +2,6 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import gql from 'graphql-tag';
-import { List } from 'semantic-ui-react';
 
 import {
   ApolloClient,
@@ -10,6 +9,8 @@ import {
   createNetworkInterface,
   graphql,
 } from 'react-apollo';
+
+import LeftSidebar from './components/sidebar/LeftSidebar';
 
 
 const networkInterface = createNetworkInterface({
@@ -30,36 +31,31 @@ const classesQuery = gql`
   }
 `;
 
-const ClassList = ({ data: { loading, classes, error }}) => (
-  <div>
-    <List>
-    { loading ?
-        <p>Loading... </p>
-        : classes.map(cls => 
-          <List.Item>{cls.name} ({cls.id})</List.Item>
-        )
-    }
-    </List>
-  </div>
-);
-
-const ClassListWithData = graphql(classesQuery)(ClassList);
-
 
 class App extends React.Component {
+
+  state = {
+    priors: [
+      {name: "Intro to Foology", id: "Foo.199.101", credits: 2.3, creditKinds: ['ENGINEERING']},
+      {name: "Advanced BarQuxing", id: "Bar.929.301", credits: 100, creditKinds: ['QUANTITATIVE']},
+    ],
+  };
+
   render() {
+
+    const { priors } = this.state;
+
     return (
       <ApolloProvider client={client}>
         <div className="App">
-          <div className="App-header">
-            <img src={logo} className="App-logo" alt="logo" />
-            <h2>Welcome to React</h2>
-          </div>
-          <ClassListWithData />
+          <LeftSidebar
+            priors={priors}
+          />
         </div>
       </ApolloProvider>
     );
   }
+
 }
 
 export default App;
