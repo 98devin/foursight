@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Sidebar, Segment, Button, Menu, Image, Icon, Header, Search, List, Form, Checkbox, Input } from 'semantic-ui-react'
+import { Sidebar, Segment, Button, Menu, Image, Icon, Header, Search, List, Form, Checkbox, Input, Divider } from 'semantic-ui-react'
 
 
 
@@ -38,7 +38,9 @@ class RightSidebar extends Component {
             icon='labeled'
             vertical
           >
-            <br/><br/><br/><br/><br/>
+            <Header as='h2' style={{paddingTop: '20px'}}> Preferences </Header>
+            <Divider style={{paddingBottom: '0px', marginBottom: '0px'}}/>
+            <br/>
             Add Major
             <br/>
             <Search onResultSelect={addMajor} />
