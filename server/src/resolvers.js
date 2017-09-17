@@ -555,7 +555,12 @@ const majors = [
           {
             tags:["FILM"],
             expectedClassTotal: 13
-          }
+          },
+          {
+            tags:["WRITING_INTENSIVE"],
+            expectedCreditTotal: 12,
+            expectedClassTotal: 4
+          },
         ],
     },
 ];
