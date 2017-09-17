@@ -11,6 +11,9 @@ const classes = [
         creditKinds: [
             "QUANTITATIVE"
         ],
+        required: [
+          "AS.110.109"
+        ],
     },
     {
         name: "Intermediate Programming",
@@ -64,6 +67,69 @@ const classes = [
             "HUMANITIES"
         ],
     },
+    {
+        name: "Introductory Programming in Java",
+        id: "EN.601.107",
+        credits: 3.0,
+        semester: "BOTH",
+        upperLevel: false,
+        creditKinds: [
+            "ENGINEERING"
+        ],
+    },
+    {
+        name: "Data Structures",
+        id: "EN.601.226",
+        credits: 4.0,
+        semester: "BOTH",
+        upperLevel: false,
+        creditKinds: [
+            "ENGINEERING",
+            "QUANTITATIVE"
+        ],
+    },
+    {
+        name: "Computer System Fundamentals",
+        id: "EN.601.229",
+        credits: 3.0,
+        semester: "BOTH",
+        upperLevel: false,
+        creditKinds: [
+            "ENGINEERING"
+        ],
+    },
+    {
+        name: "Intro Algorithms",
+        id: "EN.601.433",
+        credits: 3.0,
+        semester: "BOTH",
+        upperLevel: true,
+        creditKinds: [
+            "ENGINEERING",
+            "QUANTITATIVE"
+        ],
+    },
+    {
+        name: "Introduction to Video Game Design",
+        id: "EN.601.255",
+        credits: 3.0,
+        semester: "FALL",
+        upperLevel: false,
+        creditKinds: [
+            "ENGINEERING"
+        ],
+    },
+    {
+        name: "Digital System Fundamentals",
+        id: "EN.520.142",
+        credits: 3.0,
+        semester: "SPRING",
+        upperLevel: false,
+        creditKinds: [
+            "ENGINEERING"
+        ],
+    },
+
 ];
 
 

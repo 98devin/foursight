@@ -12,7 +12,11 @@ enum Semester {
     SPRING
     BOTH
 }
-  
+
+type Required {
+  required: [String]
+}
+
 enum CreditKind {
     QUANTITATIVE
     NATURAL_SCIENCE
@@ -31,6 +35,7 @@ type Class {
     semester: Semester
     upperLevel: Boolean
     creditKinds: [CreditKind]
+    required: [Required]
 }
 
 type Query {
@@ -41,6 +46,7 @@ type Query {
         semester: Semester,
         upperLevel: Boolean,
         creditKinds: [CreditKind]
+        required: [Required]
     ): [Class]
 }
 
