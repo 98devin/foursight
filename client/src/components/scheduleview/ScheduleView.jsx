@@ -4,6 +4,8 @@ import React from 'react';
 import {
     List,
     Table,
+    Header,
+    Label,
 } from 'semantic-ui-react';
 
 import LargeClassblock from '../classblocks/LargeClassblock';
@@ -21,8 +23,11 @@ export default class ScheduleView extends React.Component {
                     <Table.Header>
                         <Table.Row>
                             {[1,2,3,4,5,6,7,8].map(i => 
-                                <Table.HeaderCell>
-                                    {i}  {semesters[i].classes.map(cls=>cls.credits).reduce((a,b)=>a+b, 0)}
+                                <Table.HeaderCell style={{textAlign: 'center'}}>
+                                    {i}
+                                    <Label pointing='left' color='gray'>
+                                        ({semesters[i-1].classes.map(cls=>cls.credits).reduce((a,b)=>a+b, 0)})
+                                    </Label>
                                 </Table.HeaderCell>
                             )}
                         </Table.Row>
